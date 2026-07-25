@@ -224,14 +224,6 @@ NTG menggunakan beberapa format file:
 
 ---
 
-## 🚀 Instalasi
-
-### Requirements
-- Python 3.8 atau lebih tinggi
-- pip (Python package manager)
-- RAM minimal 2GB (rekomendasi 8GB)
-- Storage 500MB
-
 ### Langkah Instalasi
 ```bash
 # Clone repository
@@ -257,9 +249,9 @@ python ntg.py --interactive
 
 ---
 
-##📝 Contoh File Lengkap
+📝 Contoh File Lengkap
 
-##1. Frontend Example (frontend.ntg)
+1. Frontend Example (frontend.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -327,7 +319,7 @@ output "   - cosmic-framework.css"
 output "   - cosmic-app.js"
 ```
 
-###2. Backend Example (backend.ntg)
+2. Backend Example (backend.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -418,7 +410,7 @@ output "🚀 NTG Backend running on http://localhost:8080"
 output "📚 API Documentation: http://localhost:8080/docs"
 ```
 
-###3. API Service Example (api_service.ntg)
+3. API Service Example (api_service.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -502,7 +494,7 @@ output "📚 Documentation: ntg_api_docs.html"
 output "🔑 SDK Generated: python, javascript, java"
 ```
 
-###4. Database Example (database.ntg)
+4. Database Example (database.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -642,7 +634,7 @@ cosmic-compact
 output "✅ Cosmic Database setup complete!"
 ```
 
-###5. AI/ML Pipeline Example (ai_pipeline.ntg)
+5. AI/ML Pipeline Example (ai_pipeline.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -839,7 +831,7 @@ output "✅ AI Pipeline Complete!"
 output "📊 Final Model Accuracy: 95%"
 ```
 
-###6. Plugin Example (my_plugin.ntgpl)
+6. Plugin Example (my_plugin.ntgpl)
 
 ```json
 {
@@ -959,7 +951,7 @@ output "📊 Final Model Accuracy: 95%"
 }
 ```
 
-###7. Security Example (security.ntg)
+7. Security Example (security.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -1018,7 +1010,7 @@ decrypt-file "sensitive_data.txt.encrypted"
 output "✅ Security operations complete!"
 ```
 
-###8. Hardware Monitor Example (hardware.ntg)
+8. Hardware Monitor Example (hardware.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -1064,7 +1056,7 @@ notion-status
 output "✅ Hardware monitoring complete!"
 ```
 
-###9. Translation Example (translation.ntg)
+9. Translation Example (translation.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -1126,7 +1118,7 @@ output "✅ Translation demo complete!"
 output "📁 Translated files saved with .ntg extension"
 ```
 
-###10. Complete Web Application Example (web_app.ntg)
+10. Complete Web Application Example (web_app.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -1307,16 +1299,16 @@ output "✅ Full Stack Web Application Ready!"
 
 ---
 
-##🔌 Plugin System
+🔌 Plugin System
 
-###Cara Membuat Plugin
+Cara Membuat Plugin
 
 1. Buat file dengan ekstensi .ntgpl
 2. Isi dengan format JSON yang valid
 3. Letakkan di folder /plugins/
 4. Plugin akan auto-load saat NTG dijalankan
 
-###Format Plugin
+Format Plugin
 
 ```json
 {
@@ -1337,7 +1329,7 @@ output "✅ Full Stack Web Application Ready!"
 
 ---
 
-###🛡️ Keamanan
+##🛡️ Keamanan
 
 NTG menggunakan 50-layer quantum-resistant encryption:
 
@@ -1355,7 +1347,7 @@ Layer Metode Deskripsi
 
 ---
 
-###📊 System Requirements
+##📊 System Requirements
 
 Komponen Minimum Rekomendasi
 Python 3.8 3.11+
