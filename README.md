@@ -11,7 +11,7 @@
 
 **The Ultimate Programming Reality - All In One Universal Language**
 
-*Diciptakan oleh **Britama Permana Ere (Brian)***  
+*Diciptakan oleh **Brian Official ID***  
 *Architect of Digital Reality | Founder of Notion-Tech Generation*
 
 </div>
@@ -227,14 +227,14 @@ NTG menggunakan beberapa format file:
 ### Langkah Instalasi
 ```bash
 # Clone repository
-git clone https://github.com/brianere/ntg-language.git
+git clone https://github.com/brianofficialid/ntg-programming-language.git
 cd ntg-language
 
 # Install NTG
-python ntg.py --install
+python ntg-installer.py --install
 ```
 
-###Verifikasi Instalasi
+### Verifikasi Instalasi
 
 ```bash
 # Cek environment
@@ -249,18 +249,20 @@ python ntg.py --interactive
 
 ---
 
-📝 Contoh File Lengkap
+## 📝 Contoh File Lengkap
 
-1. Frontend Example (frontend.ntg)
+### 1. Frontend Example (frontend.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
 # ║  NTG v9.0 - Frontend Application Example                 ║
 # ║  Modern UI with Components & Responsive Design            ║
 # ╚══════════════════════════════════════════════════════════╝
-
+```
+```output
 output "🎨 NTG Frontend Building..."
-
+```
+```ntg
 # Create UI Components
 ui-create "CosmicApp"
 ui-create "CosmicNavbar"
@@ -311,7 +313,8 @@ ui-generate-js "cosmic-app"
 ui-render "Home"
 ui-render "About"
 ui-render "Dashboard"
-
+```
+```output
 output "✅ Cosmic Frontend generated successfully!"
 output "📁 Output Files:"
 output "   - index.html"
@@ -319,7 +322,7 @@ output "   - cosmic-framework.css"
 output "   - cosmic-app.js"
 ```
 
-2. Backend Example (backend.ntg)
+### 2. Backend Example (backend.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -327,8 +330,12 @@ output "   - cosmic-app.js"
 # ║  Full-Stack Backend with Authentication & API             ║
 # ╚══════════════════════════════════════════════════════════╝
 
-output "⚙️ NTG Backend Starting..."
+```
 
+```output
+output "⚙️ NTG Backend Starting..."
+```
+```ntg
 # Initialize project
 be-init
 be-create-project "ntg_backend"
@@ -405,21 +412,24 @@ be-cache "redis" '{"host": "localhost", "port": 6379}'
 
 # Start server
 be-serve 8080
-
+```
+```output
 output "🚀 NTG Backend running on http://localhost:8080"
 output "📚 API Documentation: http://localhost:8080/docs"
 ```
 
-3. API Service Example (api_service.ntg)
+### 3. API Service Example (api_service.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
 # ║  NTG v9.0 - API Service Example                          ║
 # ║  RESTful API with Full CRUD & Documentation               ║
 # ╚══════════════════════════════════════════════════════════╝
-
+```
+```output
 output "🌐 NTG API Service Starting..."
-
+```
+```ntg
 # Configure API
 api-set-base "https://api.ntg.com/v1"
 api-set-header "Content-Type" "application/json"
@@ -488,22 +498,25 @@ api-generate-sdk "java"
 
 # API Security
 api-secure '{"methods": ["api_key", "oauth2", "jwt"]}'
-
+```
+```output
 output "✅ NTG API Service Ready!"
 output "📚 Documentation: ntg_api_docs.html"
 output "🔑 SDK Generated: python, javascript, java"
 ```
 
-4. Database Example (database.ntg)
+### 4. Database Example (database.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
 # ║  NTG v9.0 - NTGDB Cosmic Database Example                ║
 # ║  Revolutionary Database with Advanced Features            ║
 # ╚══════════════════════════════════════════════════════════╝
-
+```
+```output
 output "🗄️ NTGDB v9.0 Cosmic Database Setup..."
-
+```
+```ntg
 # Create dimensions (databases)
 realm-create "ecommerce" "users" '{
   "username": "text",
@@ -630,20 +643,23 @@ cosmic-stats
 
 # Backup database
 cosmic-compact
-
+```
+```output
 output "✅ Cosmic Database setup complete!"
 ```
 
-5. AI/ML Pipeline Example (ai_pipeline.ntg)
+### 5. AI/ML Pipeline Example (ai_pipeline.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
 # ║  NTG v9.0 - AI/ML Pipeline Example                       ║
 # ║  Complete Machine Learning Workflow                       ║
 # ╚══════════════════════════════════════════════════════════╝
-
+```
+```output
 output "🤖 NTG AI/ML Pipeline Starting..."
-
+```
+```ntg
 # Create AI models for different tasks
 ai-model-create "text_classifier" "text-classification" '{
   "architecture": "transformer",
@@ -686,9 +702,11 @@ ai-model-create "recommendation_engine" "collaborative-filtering" '{
   "num_factors": 50,
   "regularization": 0.01
 }'
-
+```
+```output
 output "✅ AI Models created: text_classifier, image_detector, sentiment_analyzer, price_predictor, recommendation_engine"
-
+```
+```ntg
 # Text Analysis Pipeline
 output "=== Text Analysis ==="
 ai-text-analyze "NTG is the most powerful programming language ever created! It combines AI, frontend, backend, API, and database in one unified ecosystem."
@@ -826,12 +844,13 @@ db-store-model "final_model" '{
   "f1_score": 0.94,
   "deployment_status": "active"
 }'
-
+```
+```output
 output "✅ AI Pipeline Complete!"
 output "📊 Final Model Accuracy: 95%"
 ```
 
-6. Plugin Example (my_plugin.ntgpl)
+### 6. Plugin Example (my_plugin.ntgpl)
 
 ```json
 {
@@ -951,16 +970,18 @@ output "📊 Final Model Accuracy: 95%"
 }
 ```
 
-7. Security Example (security.ntg)
+### 7. Security Example (security.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
 # ║  NTG v9.0 - Security Example                             ║
 # ║  50-Layer Encryption & Security Features                  ║
 # ╚══════════════════════════════════════════════════════════╝
-
+```
+```output
 output "🔐 NTG Security System"
-
+```
+```ntg
 # 50-Layer Encryption
 output "=== 50-Layer Encryption ==="
 sec-encrypt "This is highly sensitive data that needs maximum protection" "my_secure_password_2024"
@@ -1006,20 +1027,23 @@ sec-encrypt "api_keys" "api_master_key"
 # File Encryption
 encrypt-file "sensitive_data.txt"
 decrypt-file "sensitive_data.txt.encrypted"
-
+```
+```output
 output "✅ Security operations complete!"
 ```
 
-8. Hardware Monitor Example (hardware.ntg)
+### 8. Hardware Monitor Example (hardware.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
 # ║  NTG v9.0 - Hardware Monitor Example                     ║
 # ║  System Hardware Information                              ║
 # ╚══════════════════════════════════════════════════════════╝
-
+```
+```output
 output "💻 NTG Hardware Monitor"
-
+```
+```ntg
 # System Overview
 output "=== System Overview ==="
 notion-sys-info
@@ -1052,20 +1076,23 @@ hw-all
 output "=== NTG Environment Check ==="
 notion-check
 notion-status
-
+```
+```output
 output "✅ Hardware monitoring complete!"
 ```
 
-9. Translation Example (translation.ntg)
+### 9. Translation Example (translation.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
 # ║  NTG v9.0 - Universal Translation Example                ║
 # ║  Cross-Language Code Translation                          ║
 # ╚══════════════════════════════════════════════════════════╝
-
+```
+```output
 output "🔄 NTG Universal Translation Demo"
-
+```
+```ntg
 # Detect language of code
 output "=== Language Detection ==="
 detect-language "def hello(): print('Hello World')"
@@ -1113,21 +1140,24 @@ output "=== File Translation ==="
 translate-file "legacy_python_app.py"
 translate-file "old_javascript_code.js"
 translate-file "enterprise_java_service.java"
-
+```
+```output
 output "✅ Translation demo complete!"
 output "📁 Translated files saved with .ntg extension"
 ```
 
-10. Complete Web Application Example (web_app.ntg)
+### 10. Complete Web Application Example (web_app.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
 # ║  NTG v9.0 - Complete Web Application Example             ║
 # ║  Full Stack Application (Frontend + Backend + API + DB)   ║
 # ╚══════════════════════════════════════════════════════════╝
-
+```
+```output
 output "🚀 NTG Full Stack Web Application Starting..."
-
+```
+```ntg
 # ==========================================
 # DATABASE SETUP
 # ==========================================
@@ -1185,9 +1215,11 @@ entity-manifest "webapp" "users" '{
 entity-manifest "webapp" "categories" '{"name": "Technology", "slug": "technology"}'
 entity-manifest "webapp" "categories" '{"name": "Programming", "slug": "programming"}'
 entity-manifest "webapp" "categories" '{"name": "AI & ML", "slug": "ai-ml"}'
-
+```
+```output
 output "✅ Database setup complete!"
-
+```
+```ntg
 # ==========================================
 # BACKEND SETUP
 # ==========================================
@@ -1218,9 +1250,11 @@ be-create-route "DELETE" "/api/posts/:id" "PostController.destroy"
 
 be-create-route "POST" "/api/auth/login" "AuthController.login"
 be-create-route "POST" "/api/auth/register" "AuthController.register"
-
+```
+```output
 output "✅ Backend setup complete!"
-
+```
+```ntg
 # ==========================================
 # FRONTEND SETUP
 # ==========================================
@@ -1266,9 +1300,11 @@ ui-generate-js "webapp-scripts"
 # Render pages
 ui-render "Home"
 ui-render "Login"
-
+```
+```output
 output "✅ Frontend setup complete!"
-
+```
+```ntg
 # ==========================================
 # API SETUP
 # ==========================================
@@ -1281,17 +1317,23 @@ api-generate-rest "posts"
 api-generate-rest "users"
 api-generate-rest "comments"
 api-generate-docs "webapp_api_docs"
-
+```
+```output
 output "✅ API setup complete!"
-
+```
+```ntg
 # ==========================================
 # START APPLICATION
 # ==========================================
+```
+```output
 output "=== Starting Application ==="
-
+```
+```bash
 # Start backend server
 be-serve 8080
-
+```
+```output
 output "🌐 Web App running at http://localhost:8080"
 output "📚 API Docs at http://localhost:8080/docs"
 output "✅ Full Stack Web Application Ready!"
@@ -1299,16 +1341,16 @@ output "✅ Full Stack Web Application Ready!"
 
 ---
 
-🔌 Plugin System
+## 🔌 Plugin System
 
-Cara Membuat Plugin
+### Cara Membuat Plugin
 
 1. Buat file dengan ekstensi .ntgpl
 2. Isi dengan format JSON yang valid
 3. Letakkan di folder /plugins/
 4. Plugin akan auto-load saat NTG dijalankan
 
-Format Plugin
+### Format Plugin
 
 ```json
 {
@@ -1329,7 +1371,7 @@ Format Plugin
 
 ---
 
-##🛡️ Keamanan
+### 🛡️ Keamanan
 
 NTG menggunakan 50-layer quantum-resistant encryption:
 
@@ -1347,17 +1389,17 @@ Layer Metode Deskripsi
 
 ---
 
-##📊 System Requirements
+### 📊 System Requirements
 
-Komponen Minimum Rekomendasi
-Python 3.8 3.11+
-RAM 2 GB 8 GB
-Storage 500 MB 2 GB
-OS Windows/Linux/macOS Linux (Ubuntu 20.04+)
+- Komponen Minimum Rekomendasi
+- Python 3.8 3.11+
+- RAM 2 GB 8 GB
+- Storage 500 MB 2 GB
+- OS Windows/Linux/macOS Linux (Ubuntu 20.04+)
 
 ---
 
-##🤝 Kontribusi
+### 🤝 Kontribusi
 
 NTG adalah proyek open source di bawah lisensi MIT!
 
@@ -1366,4 +1408,61 @@ Cara Berkontribusi
 1. Fork repository
 2. Buat branch fitur (git checkout -b fitur-keren)
 3. Commit perubahan (git commit -m 'Tambah fitur keren')
-4. Push ke
+4. Push ke branch (git push origin fitur-keren)
+5. Buat Pull Request
+
+---
+
+📜 Lisensi
+
+```
+MIT License
+
+Copyright (c) 2024 Brian Official ID
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+```
+
+---
+
+👨‍💻 Pembuat
+
+<div align="center">
+
+Brian Official ID 
+
+Founder & Architect of Notion-Tech Generation
+
+https://img.shields.io/badge/GitHub-brianere-blue?style=for-the-badge&logo=github
+
+</div>
+
+---
+
+📞 Support
+
+· 📚 Dokumentasi: coming-soon
+· 💬 Discord: NTG Community
+· 🐛 Bug Report: GitHub Issues
+
+---
+
+<div align="center">
+
+🐉 NTG v9.0 "INFINITY NEXUS" - The Ultimate Programming Reality
+
+"One Language, Infinite Possibilities"
+
+Made with ❤️ by Brian Official ID
+
+</div>
