@@ -1388,6 +1388,31 @@ Layer Metode Deskripsi
 46-50 PBKDF2 Seal Final key derivation seal
 
 ---
+### Langkah Instalasi
+```bash
+# Clone repository
+git clone https://github.com/brianere/ntg-language.git
+cd ntg-language
+
+# Install NTG
+python ntg.py --install
+```
+
+### Verifikasi Instalasi
+
+```bash
+# Cek environment
+python ntg.py --check
+
+# Lihat versi
+python ntg.py --version
+
+# Mode interaktif
+python ntg.py --interactive
+```
+
+---
+
 
 ### 📊 System Requirements
 
@@ -1452,7 +1477,7 @@ Founder & Architect of Notion-Tech Generation
 📞 Support
 
 · 📚 Dokumentasi: coming-soon
-· 💬 Discord: NTG Community
+· 💬 Discord: Notion Groups
 · 🐛 Bug Report: GitHub Issues
 
 ---
