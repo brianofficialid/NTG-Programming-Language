@@ -242,7 +242,7 @@ cd ntg-language
 python ntg.py --install
 ```
 
-Verifikasi Instalasi
+###Verifikasi Instalasi
 
 ```bash
 # Cek environment
@@ -257,9 +257,9 @@ python ntg.py --interactive
 
 ---
 
-📝 Contoh File Lengkap
+##📝 Contoh File Lengkap
 
-1. Frontend Example (frontend.ntg)
+##1. Frontend Example (frontend.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -327,7 +327,7 @@ output "   - cosmic-framework.css"
 output "   - cosmic-app.js"
 ```
 
-2. Backend Example (backend.ntg)
+###2. Backend Example (backend.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -418,7 +418,7 @@ output "🚀 NTG Backend running on http://localhost:8080"
 output "📚 API Documentation: http://localhost:8080/docs"
 ```
 
-3. API Service Example (api_service.ntg)
+###3. API Service Example (api_service.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -502,7 +502,7 @@ output "📚 Documentation: ntg_api_docs.html"
 output "🔑 SDK Generated: python, javascript, java"
 ```
 
-4. Database Example (database.ntg)
+###4. Database Example (database.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -642,7 +642,7 @@ cosmic-compact
 output "✅ Cosmic Database setup complete!"
 ```
 
-5. AI/ML Pipeline Example (ai_pipeline.ntg)
+###5. AI/ML Pipeline Example (ai_pipeline.ntg)
 
 ```ntg
 # ╔══════════════════════════════════════════════════════════╗
@@ -700,4 +700,678 @@ output "✅ AI Models created: text_classifier, image_detector, sentiment_analyz
 # Text Analysis Pipeline
 output "=== Text Analysis ==="
 ai-text-analyze "NTG is the most powerful programming language ever created! It combines AI, frontend, backend, API, and database in one unified ecosystem."
-ai
+ai-text-sentiment "I absolutely love using NTG for all my development projects!"
+ai-text-keywords "NTG combines artificial intelligence, machine learning, natural language processing, and computer vision in one language" 10
+ai-text-summarize "NTG is a revolutionary programming language that integrates multiple development paradigms. It supports frontend development with component systems, backend with MVC framework, API generation, database management with cosmic architecture, and AI/ML capabilities. The language is built on Python and designed for maximum productivity." 0.4
+
+# Data Processing
+output "=== Data Processing ==="
+ai-data-preprocess "training_data.csv" '{
+  "normalization": "minmax",
+  "handle_missing": "mean",
+  "encoding": "onehot",
+  "outlier_detection": "iqr"
+}'
+
+ai-data-split "processed_data.csv" '{
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "test_ratio": 0.15,
+  "stratify": true,
+  "random_state": 42
+}'
+
+# Data Augmentation
+output "=== Data Augmentation ==="
+ai-data-augment "train_data.csv" '{
+  "methods": ["synonym_replacement", "backtranslation", "random_swap", "random_delete"],
+  "augmentation_factor": 3,
+  "language": "en"
+}'
+
+# Feature Engineering
+output "=== Feature Engineering ==="
+ai-feature-engineering "dataset.csv" '{
+  "text_features": ["tfidf", "word2vec", "bert_embeddings"],
+  "numerical_features": ["polynomial", "log_transform", "binning"],
+  "categorical_features": ["onehot", "label", "target_encoding"],
+  "feature_selection": "mutual_information"
+}'
+
+# Model Training
+output "=== Model Training ==="
+ai-model-train "text_classifier" "training_data.json" '{
+  "epochs": 100,
+  "batch_size": 32,
+  "learning_rate": 2e-5,
+  "warmup_steps": 1000,
+  "weight_decay": 0.01,
+  "early_stopping": true,
+  "patience": 5,
+  "mixed_precision": true
+}'
+
+ai-model-train "price_predictor" "price_data.csv" '{
+  "epochs": 500,
+  "early_stopping_rounds": 50,
+  "eval_metric": "rmse",
+  "cross_validation": 5
+}'
+
+# Hyperparameter Tuning
+output "=== Hyperparameter Tuning ==="
+ai-hyperparameter-tuning "text_classifier" '{
+  "method": "bayesian",
+  "n_trials": 100,
+  "parameters": {
+    "learning_rate": [1e-5, 5e-5, 1e-4, 2e-4],
+    "batch_size": [16, 32, 64],
+    "dropout": [0.1, 0.2, 0.3],
+    "warmup_ratio": [0.0, 0.1, 0.2]
+  },
+  "objective": "maximize_accuracy"
+}'
+
+# Model Evaluation
+output "=== Model Evaluation ==="
+ai-model-evaluate "text_classifier" "test_data.json" '{
+  "metrics": ["accuracy", "precision", "recall", "f1", "auc_roc"],
+  "confusion_matrix": true,
+  "classification_report": true
+}'
+
+# Cross Validation
+output "=== Cross Validation ==="
+ai-cross-validation "text_classifier" '{
+  "method": "stratified_kfold",
+  "n_splits": 5,
+  "shuffle": true
+}'
+
+# Model Ensembling
+output "=== Model Ensembling ==="
+ai-ensemble "final_model" '{
+  "models": ["text_classifier_v1", "text_classifier_v2", "text_classifier_v3"],
+  "method": "weighted_average",
+  "weights": [0.5, 0.3, 0.2]
+}'
+
+# Model Optimization
+output "=== Model Optimization ==="
+ai-optimize "final_model" '{
+  "quantization": "int8",
+  "pruning": {"sparsity": 0.5},
+  "distillation": {"teacher_model": "text_classifier_ensemble"}
+}'
+
+# Model Deployment
+output "=== Model Deployment ==="
+ai-deploy "final_model" '{
+  "platform": "aws_sagemaker",
+  "instance_type": "ml.g4dn.xlarge",
+  "autoscaling": true,
+  "min_instances": 1,
+  "max_instances": 5
+}'
+
+# AI Fairness & Explainability
+output "=== AI Ethics ==="
+ai-fairness "text_classifier" '{
+  "protected_attributes": ["gender", "age", "race"],
+  "metrics": ["demographic_parity", "equal_opportunity"]
+}'
+
+ai-explain "text_classifier" '{
+  "method": "shap",
+  "num_samples": 100,
+  "feature_names": ["text_length", "word_count", "sentiment_score", "keyword_density"]
+}'
+
+# Store model in Neural DB
+db-store-model "final_model" '{
+  "type": "text_classification",
+  "accuracy": 0.95,
+  "f1_score": 0.94,
+  "deployment_status": "active"
+}'
+
+output "✅ AI Pipeline Complete!"
+output "📊 Final Model Accuracy: 95%"
+```
+
+###6. Plugin Example (my_plugin.ntgpl)
+
+```json
+{
+  "plugin_name": "cosmic_analyzer",
+  "plugin_version": "1.0.0",
+  "plugin_author": "Brian Ere",
+  "plugin_type": "tool",
+  "plugin_description": "Advanced cosmic data analyzer with AI capabilities for NTG ecosystem",
+  "plugin_main": "cosmic_analyze",
+  "plugin_commands": {
+    "cosmic-analyze": {
+      "description": "Analyze data using cosmic quantum algorithms",
+      "usage": "cosmic-analyze \"data_source\" --depth 5 --format quantum",
+      "instructions": [
+        "1. Load data from specified source",
+        "2. Apply cosmic normalization algorithm",
+        "3. Process through quantum analysis pipeline",
+        "4. Generate cosmic analysis report",
+        "5. Output results in specified format"
+      ],
+      "parameters": {
+        "data_source": {
+          "type": "string",
+          "required": true,
+          "description": "Path or URL to data source"
+        },
+        "depth": {
+          "type": "integer",
+          "default": 5,
+          "description": "Analysis depth level (1-10)"
+        },
+        "format": {
+          "type": "string",
+          "default": "cosmic",
+          "description": "Output format (cosmic, json, csv)"
+        }
+      }
+    },
+    "cosmic-predict": {
+      "description": "Make predictions using cosmic intelligence engine",
+      "usage": "cosmic-predict \"model_name\" \"input_data\"",
+      "instructions": [
+        "1. Load prediction model from cosmic registry",
+        "2. Preprocess input through quantum layers",
+        "3. Run inference with optimized batch processing",
+        "4. Generate predictions with confidence scores",
+        "5. Return cosmic prediction results"
+      ],
+      "parameters": {
+        "model_name": {
+          "type": "string",
+          "required": true,
+          "description": "Name of the trained model"
+        },
+        "input_data": {
+          "type": "string",
+          "required": true,
+          "description": "Input data for prediction"
+        }
+      }
+    },
+    "cosmic-train": {
+      "description": "Train a new cosmic model",
+      "usage": "cosmic-train \"model_name\" \"dataset\" \"config\"",
+      "instructions": [
+        "1. Load and validate training dataset",
+        "2. Initialize cosmic model architecture",
+        "3. Configure training hyperparameters",
+        "4. Execute distributed training",
+        "5. Save trained model to cosmic registry"
+      ]
+    }
+  },
+  "plugin_hooks": {
+    "on_startup": {
+      "action": "initialize_cosmic_engine",
+      "priority": 100
+    },
+    "on_shutdown": {
+      "action": "save_cosmic_state",
+      "priority": 50
+    },
+    "on_error": {
+      "action": "log_cosmic_error",
+      "priority": 200
+    },
+    "on_model_trained": {
+      "action": "notify_model_ready",
+      "priority": 150
+    }
+  },
+  "plugin_variables": {
+    "cosmic_threshold": 0.85,
+    "cosmic_iterations": 1000,
+    "cosmic_precision": "high",
+    "cosmic_output_format": "quantum",
+    "cosmic_cache_enabled": true,
+    "cosmic_cache_ttl": 3600
+  },
+  "plugin_instructions": [
+    "Initialize cosmic connection pool with 16 workers",
+    "Load quantum processing units into memory",
+    "Calibrate cosmic sensors for optimal accuracy",
+    "Start background cosmic monitoring service",
+    "Register cosmic event handlers for real-time processing"
+  ],
+  "plugin_dependencies": ["ntg_core >= 9.0"],
+  "plugin_config": {
+    "auto_start": true,
+    "log_level": "COSMIC",
+    "max_threads": 16,
+    "cache_enabled": true,
+    "cache_ttl": 3600,
+    "retry_attempts": 3,
+    "timeout_seconds": 30
+  }
+}
+```
+
+###7. Security Example (security.ntg)
+
+```ntg
+# ╔══════════════════════════════════════════════════════════╗
+# ║  NTG v9.0 - Security Example                             ║
+# ║  50-Layer Encryption & Security Features                  ║
+# ╚══════════════════════════════════════════════════════════╝
+
+output "🔐 NTG Security System"
+
+# 50-Layer Encryption
+output "=== 50-Layer Encryption ==="
+sec-encrypt "This is highly sensitive data that needs maximum protection" "my_secure_password_2024"
+
+# Decryption
+sec-decrypt "encrypted_data_here" "my_secure_password_2024"
+
+# Password Hashing
+output "=== Password Security ==="
+sec-password "generate" '{"length": 32, "special_chars": true, "numbers": true}'
+sec-hash "my_password" "sha512"
+
+# Token Generation
+output "=== Token Management ==="
+sec-token "generate" '{"type": "jwt", "expiry": 3600, "claims": {"user": "admin", "role": "superadmin"}}'
+sec-token "verify" "token_string_here"
+
+# SSL/TLS
+output "=== SSL/TLS ==="
+sec-ssl-check "https://api.ntg.com"
+
+# Vulnerability Scan
+output "=== Vulnerability Scan ==="
+sec-scan "https://example.com" '{
+  "scan_types": ["xss", "sql_injection", "csrf", "open_ports", "headers"],
+  "depth": "full",
+  "timeout": 60
+}'
+
+# Security Audit
+output "=== Security Audit ==="
+sec-audit '{
+  "scope": ["code", "dependencies", "configuration", "network"],
+  "compliance": ["owasp_top10", "gdpr", "pci_dss"],
+  "report_format": "detailed"
+}'
+
+# Data Encryption for Storage
+output "=== Data Protection ==="
+sec-encrypt "database_credentials" "db_master_key"
+sec-encrypt "api_keys" "api_master_key"
+
+# File Encryption
+encrypt-file "sensitive_data.txt"
+decrypt-file "sensitive_data.txt.encrypted"
+
+output "✅ Security operations complete!"
+```
+
+###8. Hardware Monitor Example (hardware.ntg)
+
+```ntg
+# ╔══════════════════════════════════════════════════════════╗
+# ║  NTG v9.0 - Hardware Monitor Example                     ║
+# ║  System Hardware Information                              ║
+# ╚══════════════════════════════════════════════════════════╝
+
+output "💻 NTG Hardware Monitor"
+
+# System Overview
+output "=== System Overview ==="
+notion-sys-info
+
+# CPU Information
+output "=== CPU Information ==="
+hw-cpu
+
+# GPU Information
+output "=== GPU Information ==="
+hw-gpu
+
+# RAM Information
+output "=== RAM Information ==="
+hw-ram
+
+# Storage Information
+output "=== Storage Information ==="
+hw-storage
+
+# System Uptime
+output "=== System Uptime ==="
+hw-uptime
+
+# Complete Hardware Report
+output "=== Complete Hardware Report ==="
+hw-all
+
+# System Status Check
+output "=== NTG Environment Check ==="
+notion-check
+notion-status
+
+output "✅ Hardware monitoring complete!"
+```
+
+###9. Translation Example (translation.ntg)
+
+```ntg
+# ╔══════════════════════════════════════════════════════════╗
+# ║  NTG v9.0 - Universal Translation Example                ║
+# ║  Cross-Language Code Translation                          ║
+# ╚══════════════════════════════════════════════════════════╝
+
+output "🔄 NTG Universal Translation Demo"
+
+# Detect language of code
+output "=== Language Detection ==="
+detect-language "def hello(): print('Hello World')"
+detect-language "console.log('Hello World');"
+detect-language "public class Main { public static void main(String[] args) { System.out.println(\"Hello\"); } }"
+detect-language "#include <iostream>\nint main() { std::cout << \"Hello\"; return 0; }"
+
+# Translate Python code to NTG
+output "=== Python to NTG ==="
+translate-code "
+def calculate_total(items):
+    total = 0
+    for item in items:
+        if item.price > 0:
+            total += item.price * item.quantity
+    return total
+
+class ShoppingCart:
+    def __init__(self):
+        self.items = []
+    
+    def add_item(self, item):
+        self.items.append(item)
+        print(f'Added {item.name} to cart')
+" "python"
+
+# Translate JavaScript code to NTG
+output "=== JavaScript to NTG ==="
+translate-code "
+const fetchUserData = async (userId) => {
+    try {
+        const response = await fetch(`/api/users/${userId}`);
+        const data = await response.json();
+        console.log('User data:', data);
+        return data;
+    } catch (error) {
+        console.error('Error fetching user:', error);
+        throw error;
+    }
+};
+" "javascript"
+
+# Translate files
+output "=== File Translation ==="
+translate-file "legacy_python_app.py"
+translate-file "old_javascript_code.js"
+translate-file "enterprise_java_service.java"
+
+output "✅ Translation demo complete!"
+output "📁 Translated files saved with .ntg extension"
+```
+
+###10. Complete Web Application Example (web_app.ntg)
+
+```ntg
+# ╔══════════════════════════════════════════════════════════╗
+# ║  NTG v9.0 - Complete Web Application Example             ║
+# ║  Full Stack Application (Frontend + Backend + API + DB)   ║
+# ╚══════════════════════════════════════════════════════════╝
+
+output "🚀 NTG Full Stack Web Application Starting..."
+
+# ==========================================
+# DATABASE SETUP
+# ==========================================
+output "=== Database Setup ==="
+
+realm-create "webapp" "users" '{
+  "username": "text",
+  "email": "text",
+  "password": "text",
+  "role": "text",
+  "profile_image": "text",
+  "active": "truth",
+  "created_at": "timestamp",
+  "updated_at": "timestamp"
+}'
+
+realm-create "webapp" "posts" '{
+  "title": "text",
+  "content": "text",
+  "author_id": "text",
+  "category_id": "text",
+  "tags": "text",
+  "status": "text",
+  "views": "integer",
+  "created_at": "timestamp"
+}'
+
+realm-create "webapp" "categories" '{
+  "name": "text",
+  "slug": "text",
+  "description": "text"
+}'
+
+realm-create "webapp" "comments" '{
+  "post_id": "text",
+  "user_id": "text",
+  "content": "text",
+  "created_at": "timestamp"
+}'
+
+# Create relationships
+portal-create "webapp" "users" "webapp" "posts" "author_id"
+portal-create "webapp" "categories" "webapp" "posts" "category_id"
+portal-create "webapp" "posts" "webapp" "comments" "post_id"
+portal-create "webapp" "users" "webapp" "comments" "user_id"
+
+# Insert sample data
+entity-manifest "webapp" "users" '{
+  "username": "admin",
+  "email": "admin@webapp.com",
+  "role": "admin",
+  "active": true
+}'
+
+entity-manifest "webapp" "categories" '{"name": "Technology", "slug": "technology"}'
+entity-manifest "webapp" "categories" '{"name": "Programming", "slug": "programming"}'
+entity-manifest "webapp" "categories" '{"name": "AI & ML", "slug": "ai-ml"}'
+
+output "✅ Database setup complete!"
+
+# ==========================================
+# BACKEND SETUP
+# ==========================================
+output "=== Backend Setup ==="
+
+be-init
+be-create-project "webapp_backend"
+
+# Create controllers
+be-create-controller "UserController"
+be-create-controller "PostController"
+be-create-controller "CategoryController"
+be-create-controller "CommentController"
+
+# Generate authentication
+be-generate-auth
+
+# Create middleware
+be-create-middleware "AuthMiddleware"
+be-create-middleware "LoggingMiddleware"
+
+# API Routes
+be-create-route "GET" "/api/posts" "PostController.index"
+be-create-route "GET" "/api/posts/:id" "PostController.show"
+be-create-route "POST" "/api/posts" "PostController.store"
+be-create-route "PUT" "/api/posts/:id" "PostController.update"
+be-create-route "DELETE" "/api/posts/:id" "PostController.destroy"
+
+be-create-route "POST" "/api/auth/login" "AuthController.login"
+be-create-route "POST" "/api/auth/register" "AuthController.register"
+
+output "✅ Backend setup complete!"
+
+# ==========================================
+# FRONTEND SETUP
+# ==========================================
+output "=== Frontend Setup ==="
+
+# Create components
+ui-create "App"
+ui-create "Navbar"
+ui-create "Sidebar"
+ui-create "PostCard"
+ui-create "PostList"
+ui-create "PostForm"
+ui-create "CommentSection"
+ui-create "LoginForm"
+ui-create "RegisterForm"
+ui-create "UserProfile"
+
+# Set theme
+ui-theme "webapp" '{
+  "primary": "#3B82F6",
+  "secondary": "#8B5CF6",
+  "success": "#10B981",
+  "danger": "#EF4444",
+  "warning": "#F59E0B",
+  "background": "#F9FAFB",
+  "surface": "#FFFFFF",
+  "text": "#111827"
+}'
+
+# Create pages
+ui-page "Home" "default" '["Navbar","PostList","Sidebar"]'
+ui-page "Post" "default" '["Navbar","PostCard","CommentSection","Sidebar"]'
+ui-page "CreatePost" "default" '["Navbar","PostForm"]'
+ui-page "Login" "auth" '["LoginForm"]'
+ui-page "Register" "auth" '["RegisterForm"]'
+ui-page "Profile" "default" '["Navbar","UserProfile"]'
+
+# Generate assets
+ui-generate-html
+ui-generate-css "webapp-styles"
+ui-generate-js "webapp-scripts"
+
+# Render pages
+ui-render "Home"
+ui-render "Login"
+
+output "✅ Frontend setup complete!"
+
+# ==========================================
+# API SETUP
+# ==========================================
+output "=== API Setup ==="
+
+api-set-base "http://localhost:8080/api"
+api-set-auth "jwt"
+
+api-generate-rest "posts"
+api-generate-rest "users"
+api-generate-rest "comments"
+api-generate-docs "webapp_api_docs"
+
+output "✅ API setup complete!"
+
+# ==========================================
+# START APPLICATION
+# ==========================================
+output "=== Starting Application ==="
+
+# Start backend server
+be-serve 8080
+
+output "🌐 Web App running at http://localhost:8080"
+output "📚 API Docs at http://localhost:8080/docs"
+output "✅ Full Stack Web Application Ready!"
+```
+
+---
+
+##🔌 Plugin System
+
+###Cara Membuat Plugin
+
+1. Buat file dengan ekstensi .ntgpl
+2. Isi dengan format JSON yang valid
+3. Letakkan di folder /plugins/
+4. Plugin akan auto-load saat NTG dijalankan
+
+###Format Plugin
+
+```json
+{
+  "plugin_name": "nama_plugin",
+  "plugin_version": "1.0.0",
+  "plugin_author": "Nama Pembuat",
+  "plugin_type": "command|middleware|theme|tool",
+  "plugin_description": "Deskripsi plugin",
+  "plugin_main": "fungsi_utama",
+  "plugin_commands": {},
+  "plugin_hooks": {},
+  "plugin_variables": {},
+  "plugin_instructions": [],
+  "plugin_dependencies": [],
+  "plugin_config": {}
+}
+```
+
+---
+
+###🛡️ Keamanan
+
+NTG menggunakan 50-layer quantum-resistant encryption:
+
+Layer Metode Deskripsi
+1-5 XOR Chain Multi-key XOR encryption
+6-10 AES Variant Advanced Encryption Standard
+11-15 Chaotic Maps Chaos-based encryption
+16-20 Feistel Network Block cipher structure
+21-25 Quantum Padding Quantum-resistant padding
+26-30 Hash Chain Cryptographic hash chain
+31-35 Substitution S-Box substitution
+36-40 Transposition Matrix transposition
+41-45 Compression Compress-then-encrypt
+46-50 PBKDF2 Seal Final key derivation seal
+
+---
+
+###📊 System Requirements
+
+Komponen Minimum Rekomendasi
+Python 3.8 3.11+
+RAM 2 GB 8 GB
+Storage 500 MB 2 GB
+OS Windows/Linux/macOS Linux (Ubuntu 20.04+)
+
+---
+
+##🤝 Kontribusi
+
+NTG adalah proyek open source di bawah lisensi MIT!
+
+Cara Berkontribusi
+
+1. Fork repository
+2. Buat branch fitur (git checkout -b fitur-keren)
+3. Commit perubahan (git commit -m 'Tambah fitur keren')
+4. Push ke
