@@ -1390,25 +1390,21 @@ Layer Metode Deskripsi
 ---
 ### Langkah Instalasi
 ```bash
-# Clone repository
-git clone https://github.com/brianere/ntg-language.git
-cd ntg-language
-
 # Install NTG
-python ntg.py --install
+python ntg-installer.py --install
 ```
 
 ### Verifikasi Instalasi
 
 ```bash
 # Cek environment
-python ntg.py --check
+python ntg-installer.py --check
 
 # Lihat versi
-python ntg.py --version
+python ntg-installer.py --version
 
 # Mode interaktif
-python ntg.py --interactive
+python ntg-installer.py --interactive
 ```
 
 ---
