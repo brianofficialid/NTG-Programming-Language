@@ -1443,8 +1443,7 @@ Brian Official ID
 
 Founder & Architect of Notion-Tech Generation
 
-![brianofficialid]
-https://img.shields.io/badge/GitHub-brianofficialid-blue?style=for-the-badge&logo=github
+![brianofficialid](https://img.shields.io/badge/GitHub-brianofficialid-blue?style=for-the-badge&logo=github)
 
 </div>
 
