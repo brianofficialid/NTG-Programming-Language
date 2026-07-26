@@ -505,9 +505,9 @@ output "📚 Documentation: ntg_api_docs.html"
 output "🔑 SDK Generated: python, javascript, java"
 ```
 
-### 4. Database Example (database.ntg)
+### 4. Database Example (database.ntgdb)
 
-```ntg
+```ntgdb
 # ╔══════════════════════════════════════════════════════════╗
 # ║  NTG v9.0 - NTGDB Cosmic Database Example                ║
 # ║  Revolutionary Database with Advanced Features            ║
