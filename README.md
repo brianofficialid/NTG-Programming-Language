@@ -226,10 +226,6 @@ NTG menggunakan beberapa format file:
 
 ### Langkah Instalasi
 ```bash
-# Clone repository
-git clone https://github.com/brianofficialid/ntg-programming-language.git
-cd ntg-language
-
 # Install NTG
 python ntg-installer.py --install
 ```
