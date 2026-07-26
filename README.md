@@ -238,13 +238,13 @@ python ntg-installer.py --install
 
 ```bash
 # Cek environment
-python ntg.py --check
+python ntg-installer.py --check
 
 # Lihat versi
-python ntg.py --version
+python ntg-installer.py --version
 
 # Mode interaktif
-python ntg.py --interactive
+python ntg-installer.py --interactive
 ```
 
 ---
@@ -258,11 +258,9 @@ python ntg.py --interactive
 # ║  NTG v9.0 - Frontend Application Example                 ║
 # ║  Modern UI with Components & Responsive Design            ║
 # ╚══════════════════════════════════════════════════════════╝
-```
-```output
+
 output "🎨 NTG Frontend Building..."
-```
-```ntg
+
 # Create UI Components
 ui-create "CosmicApp"
 ui-create "CosmicNavbar"
@@ -313,8 +311,7 @@ ui-generate-js "cosmic-app"
 ui-render "Home"
 ui-render "About"
 ui-render "Dashboard"
-```
-```output
+
 output "✅ Cosmic Frontend generated successfully!"
 output "📁 Output Files:"
 output "   - index.html"
