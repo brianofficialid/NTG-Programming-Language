@@ -330,12 +330,8 @@ output "   - cosmic-app.js"
 # ║  Full-Stack Backend with Authentication & API             ║
 # ╚══════════════════════════════════════════════════════════╝
 
-```
-
-```output
 output "⚙️ NTG Backend Starting..."
-```
-```ntg
+
 # Initialize project
 be-init
 be-create-project "ntg_backend"
@@ -412,8 +408,7 @@ be-cache "redis" '{"host": "localhost", "port": 6379}'
 
 # Start server
 be-serve 8080
-```
-```output
+
 output "🚀 NTG Backend running on http://localhost:8080"
 output "📚 API Documentation: http://localhost:8080/docs"
 ```
@@ -425,11 +420,9 @@ output "📚 API Documentation: http://localhost:8080/docs"
 # ║  NTG v9.0 - API Service Example                          ║
 # ║  RESTful API with Full CRUD & Documentation               ║
 # ╚══════════════════════════════════════════════════════════╝
-```
-```output
+
 output "🌐 NTG API Service Starting..."
-```
-```ntg
+
 # Configure API
 api-set-base "https://api.ntg.com/v1"
 api-set-header "Content-Type" "application/json"
@@ -498,8 +491,7 @@ api-generate-sdk "java"
 
 # API Security
 api-secure '{"methods": ["api_key", "oauth2", "jwt"]}'
-```
-```output
+
 output "✅ NTG API Service Ready!"
 output "📚 Documentation: ntg_api_docs.html"
 output "🔑 SDK Generated: python, javascript, java"
@@ -512,11 +504,9 @@ output "🔑 SDK Generated: python, javascript, java"
 # ║  NTG v9.0 - NTGDB Cosmic Database Example                ║
 # ║  Revolutionary Database with Advanced Features            ║
 # ╚══════════════════════════════════════════════════════════╝
-```
-```output
+
 output "🗄️ NTGDB v9.0 Cosmic Database Setup..."
-```
-```ntg
+
 # Create dimensions (databases)
 realm-create "ecommerce" "users" '{
   "username": "text",
@@ -643,8 +633,7 @@ cosmic-stats
 
 # Backup database
 cosmic-compact
-```
-```output
+
 output "✅ Cosmic Database setup complete!"
 ```
 
@@ -655,11 +644,9 @@ output "✅ Cosmic Database setup complete!"
 # ║  NTG v9.0 - AI/ML Pipeline Example                       ║
 # ║  Complete Machine Learning Workflow                       ║
 # ╚══════════════════════════════════════════════════════════╝
-```
-```output
+
 output "🤖 NTG AI/ML Pipeline Starting..."
-```
-```ntg
+
 # Create AI models for different tasks
 ai-model-create "text_classifier" "text-classification" '{
   "architecture": "transformer",
@@ -702,11 +689,9 @@ ai-model-create "recommendation_engine" "collaborative-filtering" '{
   "num_factors": 50,
   "regularization": 0.01
 }'
-```
-```output
+
 output "✅ AI Models created: text_classifier, image_detector, sentiment_analyzer, price_predictor, recommendation_engine"
-```
-```ntg
+
 # Text Analysis Pipeline
 output "=== Text Analysis ==="
 ai-text-analyze "NTG is the most powerful programming language ever created! It combines AI, frontend, backend, API, and database in one unified ecosystem."
@@ -844,8 +829,7 @@ db-store-model "final_model" '{
   "f1_score": 0.94,
   "deployment_status": "active"
 }'
-```
-```output
+
 output "✅ AI Pipeline Complete!"
 output "📊 Final Model Accuracy: 95%"
 ```
@@ -977,11 +961,9 @@ output "📊 Final Model Accuracy: 95%"
 # ║  NTG v9.0 - Security Example                             ║
 # ║  50-Layer Encryption & Security Features                  ║
 # ╚══════════════════════════════════════════════════════════╝
-```
-```output
+
 output "🔐 NTG Security System"
-```
-```ntg
+
 # 50-Layer Encryption
 output "=== 50-Layer Encryption ==="
 sec-encrypt "This is highly sensitive data that needs maximum protection" "my_secure_password_2024"
@@ -1027,8 +1009,7 @@ sec-encrypt "api_keys" "api_master_key"
 # File Encryption
 encrypt-file "sensitive_data.txt"
 decrypt-file "sensitive_data.txt.encrypted"
-```
-```output
+
 output "✅ Security operations complete!"
 ```
 
@@ -1039,11 +1020,9 @@ output "✅ Security operations complete!"
 # ║  NTG v9.0 - Hardware Monitor Example                     ║
 # ║  System Hardware Information                              ║
 # ╚══════════════════════════════════════════════════════════╝
-```
-```output
+
 output "💻 NTG Hardware Monitor"
-```
-```ntg
+
 # System Overview
 output "=== System Overview ==="
 notion-sys-info
@@ -1076,8 +1055,7 @@ hw-all
 output "=== NTG Environment Check ==="
 notion-check
 notion-status
-```
-```output
+
 output "✅ Hardware monitoring complete!"
 ```
 
@@ -1088,11 +1066,9 @@ output "✅ Hardware monitoring complete!"
 # ║  NTG v9.0 - Universal Translation Example                ║
 # ║  Cross-Language Code Translation                          ║
 # ╚══════════════════════════════════════════════════════════╝
-```
-```output
+
 output "🔄 NTG Universal Translation Demo"
-```
-```ntg
+
 # Detect language of code
 output "=== Language Detection ==="
 detect-language "def hello(): print('Hello World')"
@@ -1140,8 +1116,7 @@ output "=== File Translation ==="
 translate-file "legacy_python_app.py"
 translate-file "old_javascript_code.js"
 translate-file "enterprise_java_service.java"
-```
-```output
+
 output "✅ Translation demo complete!"
 output "📁 Translated files saved with .ntg extension"
 ```
@@ -1153,11 +1128,9 @@ output "📁 Translated files saved with .ntg extension"
 # ║  NTG v9.0 - Complete Web Application Example             ║
 # ║  Full Stack Application (Frontend + Backend + API + DB)   ║
 # ╚══════════════════════════════════════════════════════════╝
-```
-```output
+
 output "🚀 NTG Full Stack Web Application Starting..."
-```
-```ntg
+
 # ==========================================
 # DATABASE SETUP
 # ==========================================
@@ -1215,11 +1188,9 @@ entity-manifest "webapp" "users" '{
 entity-manifest "webapp" "categories" '{"name": "Technology", "slug": "technology"}'
 entity-manifest "webapp" "categories" '{"name": "Programming", "slug": "programming"}'
 entity-manifest "webapp" "categories" '{"name": "AI & ML", "slug": "ai-ml"}'
-```
-```output
+
 output "✅ Database setup complete!"
-```
-```ntg
+
 # ==========================================
 # BACKEND SETUP
 # ==========================================
@@ -1250,11 +1221,9 @@ be-create-route "DELETE" "/api/posts/:id" "PostController.destroy"
 
 be-create-route "POST" "/api/auth/login" "AuthController.login"
 be-create-route "POST" "/api/auth/register" "AuthController.register"
-```
-```output
+
 output "✅ Backend setup complete!"
-```
-```ntg
+
 # ==========================================
 # FRONTEND SETUP
 # ==========================================
@@ -1300,11 +1269,9 @@ ui-generate-js "webapp-scripts"
 # Render pages
 ui-render "Home"
 ui-render "Login"
-```
-```output
+
 output "✅ Frontend setup complete!"
-```
-```ntg
+
 # ==========================================
 # API SETUP
 # ==========================================
@@ -1317,23 +1284,18 @@ api-generate-rest "posts"
 api-generate-rest "users"
 api-generate-rest "comments"
 api-generate-docs "webapp_api_docs"
-```
-```output
+
 output "✅ API setup complete!"
-```
-```ntg
+
 # ==========================================
 # START APPLICATION
 # ==========================================
-```
-```output
+
 output "=== Starting Application ==="
-```
-```bash
+
 # Start backend server
 be-serve 8080
-```
-```output
+
 output "🌐 Web App running at http://localhost:8080"
 output "📚 API Docs at http://localhost:8080/docs"
 output "✅ Full Stack Web Application Ready!"
